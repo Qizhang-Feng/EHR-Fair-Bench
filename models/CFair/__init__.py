@@ -1,0 +1,2 @@
+from .cfair_transformer import CFair_Transformer
+from .cfair_trainer import CFair_Trainer
