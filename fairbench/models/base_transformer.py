@@ -135,11 +135,6 @@ class BaseTransformer(BaseModel):
 
         # the key of self.feat_tokenizers only contains the code based inputs
         self.feat_tokenizers = {}
-        self.label_tokenizer = self.get_label_tokenizer()
-
-        # /**------ prepare sens tokenizer ------**/
-        self.sens_tokenizer = self.get_sens_tokenizer()
-        # /**------ prepare sens tokenizer ------**/
 
 
         # the key of self.embeddings only contains the code based inputs

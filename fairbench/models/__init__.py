@@ -14,3 +14,7 @@ from .LNL import (
 from .CFair import (
     CFair_Transformer, CFair_Trainer
 )
+
+from .AFAL import(
+    AFAL_Transformer, AFAL_Trainer
+)

@@ -42,6 +42,17 @@ class BaseModel(pyhealth.models.BaseModel):
 
         self.label_distri: Dict[str, int]
         self.sens_distri: Dict[str, int]
+
+        
+        self.label_tokenizer = self.get_label_tokenizer()
+
+        # /**------ prepare sens tokenizer ------**/
+        self.sens_tokenizer = self.get_sens_tokenizer()
+        # /**------ prepare sens tokenizer ------**/
+
+
+        self.label_distri = self.dataset.get_distribution_tokens(label_key)
+        self.sens_distri  = self.dataset.get_distribution_tokens(sens_key)
         
     def get_sens_tokenizer(self, special_tokens=None) -> Tokenizer:
         """Gets the default sens tokenizers using `self.sens_key`.

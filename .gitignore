@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # datasets
-datasets/*
+fairbench/datasets/*
 
 # output
-output/*
+fairbench/output/*
